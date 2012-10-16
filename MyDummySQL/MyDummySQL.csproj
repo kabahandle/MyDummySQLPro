@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{968ACD0B-4C20-4EB4-B17D-C9697FCBEAF0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyDummySQL</RootNamespace>
+    <AssemblyName>MyDummySQL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.3.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.3.8\Assemblies\v4.0\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomData\CustomDataMySQLTable.cs" />
+    <Compile Include="DAOs\AccesSchemaDAO.cs" />
+    <Compile Include="DAOs\AccessConstring.cs" />
+    <Compile Include="DAOs\MyDAOBase.cs" />
+    <Compile Include="DAOs\MyDummySQLSettingsDAO.cs" />
+    <Compile Include="DAOs\MyDummySQLSettingsSingleton.cs" />
+    <Compile Include="DAOs\tableDAO.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaveDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaveDialog.Designer.cs">
+      <DependentUpon>frmSaveDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\AccessTableHelperForForm.cs" />
+    <Compile Include="Helper\CryptHelper.cs" />
+    <Compile Include="Helper\MySQLTableHelperForForm.cs" />
+    <Compile Include="MySQLDAO\InsertDAO.cs" />
+    <Compile Include="MySQLDAO\MySQLConString.cs" />
+    <Compile Include="MySQLDAO\MySQLDAOContext.cs" />
+    <Compile Include="MySQLDAO\MySQLDAOBase.cs" />
+    <Compile Include="MySQLDAO\MySQLSchemaDAO.cs" />
+    <Compile Include="MySQLDAO\myTableColDAO.cs" />
+    <Compile Include="MySQLDAO\t_table1Dao.cs" />
+    <Compile Include="MySQLDAO\myTableDAO.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Program\Columns\ColumnData.cs" />
+    <Compile Include="Program\ContextNS\ConstStringContext.cs" />
+    <Compile Include="Program\ContextNS\Context.cs" />
+    <Compile Include="Program\ContextNS\RandomMySQLTableContext.cs" />
+    <Compile Include="Program\ContextNS\RandomNumberContext.cs" />
+    <Compile Include="Program\ContextNS\RandomAccessTableContext.cs" />
+    <Compile Include="Program\ContextNS\SeqMySQLTableContext.cs" />
+    <Compile Include="Program\ContextNS\SeqNumberContext.cs" />
+    <Compile Include="Program\ContextNS\SeqAccessTableContext.cs" />
+    <Compile Include="Program\ContextNS\SeqDateContext.cs" />
+    <Compile Include="Program\ContextNS\RandomDateContext.cs" />
+    <Compile Include="Program\ContextNS\SeqDateTimeContext.cs" />
+    <Compile Include="Program\ContextNS\RandomDateTimeContext.cs" />
+    <Compile Include="Program\FactoryNS\ContextFactory.cs" />
+    <Compile Include="Program\GeneratorNS\ColumnDataGenerator.cs" />
+    <Compile Include="Program\HelperNS\ContextNo.cs" />
+    <Compile Include="Program\HelperNS\ContextNoHelper.cs" />
+    <Compile Include="Program\HelperNS\MySQLTableData.cs" />
+    <Compile Include="Program\HelperNS\MySQLTableHelper.cs" />
+    <Compile Include="Program\NodeNS\ConstStringNode.cs" />
+    <Compile Include="Program\NodeNS\INode.cs" />
+    <Compile Include="Program\NodeNS\RandomMySQLTableNode.cs" />
+    <Compile Include="Program\NodeNS\RandomNumberNode.cs" />
+    <Compile Include="Program\NodeNS\RandomAccessTableNode.cs" />
+    <Compile Include="Program\NodeNS\SeqMySQLTableNode.cs" />
+    <Compile Include="Program\NodeNS\SeqNumberNode.cs" />
+    <Compile Include="Program\FactoryNS\ProgramNodeFactory.cs" />
+    <Compile Include="Program\NodeNS\SeqAccessTableNode.cs" />
+    <Compile Include="Program\NodeNS\SeqDateNode.cs" />
+    <Compile Include="Program\NodeNS\RandomDateNode.cs" />
+    <Compile Include="Program\NodeNS\SeqDateTimeNode.cs" />
+    <Compile Include="Program\NodeNS\RandomDateTimeNode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaveDialog.resx">
+      <DependentUpon>frmSaveDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\main.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\setting.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

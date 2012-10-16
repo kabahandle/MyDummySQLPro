@@ -1,0 +1,22 @@
+aaa|vv(aa(bb):cc(dd))
+
+|aaa:vv(aa(bb):cc(dd)):ee
+
+|aaa:vv(sss|aa(bb):cc(dd)):ee
+
+|aaa:vv(|sss:111|aa(‚¢‚¢:00):cc(dd:22)):‚ ‚ |aa2:bb2
+
+vv(|seqint:1,1000|aa(|const:aaa|seqint:1,1000)|bb(|const:bbb))
+
+
+vv(|seqint:1,1000|aa(cc(|const:aaa|seqint:1,1000))|bb(|const:dd(const:bbb)))
+
+vv(|seqint:1,1000|aa(cc(|const:aaa|seqint:1,1000),999)|bb(|const:dd(const:bbb,888)))
+
+|cc(|const:aaa|seqint:1,100;aaa;bbb;|ddd(const:ccc;999))
+
+|vv(|seqint:1,1000|aa(|cc(|const:aaa|seqint:1,1000);999)|bb(|const:|dd(const:bbb;888)))
+
+|vv(|seqint:1,1000|aa(|cc(|const:aaa|seqint:1,1000);999)|bb(|const:|R(const:bbb;b;P)))
+
+|Sub(|seqint:1,1000|aa(|cc(|const:aaa|seqint:1,1000);999)|bb(|const:|R(const:bbb;b;P));1)
