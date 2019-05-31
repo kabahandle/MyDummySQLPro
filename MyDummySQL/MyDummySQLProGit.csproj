@@ -59,6 +59,10 @@
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.3.8\Assemblies\v4.0\MySql.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="PHPSerializationLibrary, Version=1.0.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\PHPSerializationLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -188,6 +192,8 @@
     <Content Include="App_Data\setting.mdb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="DLL\MySql.Data.dll" />
+    <Content Include="DLL\PHPSerializationLibrary.dll" />
     <Content Include="mdsql.ico" />
     <Content Include="データ\mydummysql_fields.txt" />
     <Content Include="データ\mydummysql_fields2.txt" />

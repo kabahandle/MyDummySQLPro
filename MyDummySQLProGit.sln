@@ -1,20 +1,29 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDummySQLProGit", "MyDummySQL\MyDummySQLProGit.csproj", "{968ACD0B-4C20-4EB4-B17D-C9697FCBEAF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{968ACD0B-4C20-4EB4-B17D-C9697FCBEAF0}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{968ACD0B-4C20-4EB4-B17D-C9697FCBEAF0}.Debug|x86.ActiveCfg = Release|x86
 		{968ACD0B-4C20-4EB4-B17D-C9697FCBEAF0}.Debug|x86.Build.0 = Release|x86
+		{968ACD0B-4C20-4EB4-B17D-C9697FCBEAF0}.Release|Any CPU.ActiveCfg = Release|x86
 		{968ACD0B-4C20-4EB4-B17D-C9697FCBEAF0}.Release|x86.ActiveCfg = Release|x86
 		{968ACD0B-4C20-4EB4-B17D-C9697FCBEAF0}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6521D8D6-3536-4F53-8ACE-6470ABC44D4C}
 	EndGlobalSection
 EndGlobal
